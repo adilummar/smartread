@@ -4,6 +4,9 @@ import { RiComputerLine, RiGlobalLine } from "react-icons/ri";
 import { BiLayer } from "react-icons/bi";
 import { IoGameControllerOutline } from "react-icons/io5";
 
+
+import classes from "../assets/class.jpg";
+
 const features = [
   {
     title: "Smart Boards",
@@ -42,7 +45,7 @@ const SmartLearningFeatures = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <img
-            src="/src/assets/class.jpg"
+            src={classes}
             alt="Smart Learning"
             className="rounded-lg shadow-md w-full"
           />

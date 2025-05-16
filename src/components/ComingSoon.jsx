@@ -2,24 +2,28 @@ import React from "react";
 import { motion } from "framer-motion";
 import { LuBell } from "react-icons/lu";
 
+import kg from "../assets/kg.jpg";
+import stem from "../assets/stem.jpg";
+import spoken from "../assets/spoken.jpg";
+
 const comingPrograms = [
   {
     title: "Preschool & KG",
     description:
       "Early learning experience designed specifically for young students with age-appropriate activities and learning.",
-    image: "/src/assets/kg.jpg",
+    image: kg,
   },
   {
     title: "STEM & Robotics",
     description:
       "Hands-on learning experience in Science, Technology, Engineering, and Mathematics with robotics integration.",
-    image: "/src/assets/stem.jpg",
+    image: stem,
   },
   {
     title: "Spoken Arabic",
     description:
       "Conversational Arabic program focused on everyday use and cultural understanding.",
-    image: "/src/assets/spoken.jpg",
+    image: spoken,
   },
 ];
 

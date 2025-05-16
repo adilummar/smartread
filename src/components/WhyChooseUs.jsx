@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaLanguage, FaUserGraduate, FaChalkboardTeacher, FaHandsHelping } from 'react-icons/fa';
 
+import classwithTeacher from "../assets/classwithteacher.jpg";
+
 const points = [
   {
     title: 'Bilingual Education',
@@ -86,7 +88,7 @@ const WhyChooseUs = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <img
-            src="/src/assets/classwithteacher.jpg"
+            src={classwithTeacher}
             alt="Why Choose Us"
             className="rounded-lg shadow-md w-full"
           />
