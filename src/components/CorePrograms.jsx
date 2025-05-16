@@ -5,34 +5,40 @@ import { RiGraduationCapLine } from "react-icons/ri";
 import { FaRegLightbulb } from "react-icons/fa6";
 import { GrGroup } from "react-icons/gr";
 
+import girlswithquran from  '../assets/girlswithquran.jpg';
+import acadamic from  '../assets/acadamic.jpg';
+import boy from  '../assets/boy.jpg';
+import last from  '../assets/last.jpg';
+
+
 const programs = [
   {
     title: 'Arabic & Islamic Studies',
     icons: <FiBookOpen size={24} className='text-[#4f46e5]' />,
     description:
       'Comprehensive 5-month+ program combining Qur’an memorization, Arabic language, and Islamic studies.',
-    image: '/src/assets/girlswithquran.jpg',
+    image: girlswithquran,
   },
   {
     title: 'Academic Support Plus',
     icons: <RiGraduationCapLine size={24} className='text-[#4f46e5]' />,
     description:
       'English, Math & Science with school-based learning support in small batches for Grades 1–6.',
-    image: '/src/assets/acadamic.jpg',
+    image: acadamic,
   },
   {
     title: 'Skill Development',
     icons: <FaRegLightbulb size={24} className='text-[#4f46e5]' />,
     description:
       'Activities like coding, robotics, mental math, public speaking, and more to build 21st-century skills.',
-    image: '/src/assets/boy.jpg',
+    image: boy,
   },
   {
     title: 'Youth Development',
     icons: <GrGroup size={24} className='text-[#4f46e5]' />,
     description:
       'Programs designed for teenagers to enhance personal development, leadership, and resilience.',
-    image: '/src/assets/last.jpg',
+    image: last,
   },
 ];
 
