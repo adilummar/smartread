@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+// import smart from "../assets/logoSmart.png"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ function Navbar() {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <img
-            src="/src/assets/logoSmart.png"
+            src={'/logoSmart.png'}
             alt="Smart Read Academy"
             className="h-12 w-auto"
           />

@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import hero from '../assets/hero.jpg'
+
 const HeroSection = () => {
   return (
     <section className="bg-white">
@@ -51,7 +53,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <img
-            src="/src/assets/heroimg.png"
+            src={hero}
             alt="Smart Learning Environment"
             className="rounded-lg w-full max-w-md md:max-w-full"
           />

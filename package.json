@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://adilummar.github.io/smartreadsite/", // Add this line
+  "homepage": "https://adilummar.github.io/smartreadsite/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",       // Add these 2 new scripts
+    "predeploy": "npm run build",       
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
