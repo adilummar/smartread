@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import smart from "../assets/logoSmart.png"
+import smart from "../assets/logoSmart.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,24 +22,23 @@ function Navbar() {
       <div className="container containers mx-auto px-4 py-4 flex justify-between items-center ">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img
-            src={smart}
-            alt="Smart Read Academy"
-            className="h-12 w-auto"
-          />
+          <img src={smart} alt="Smart Read Academy" className="h-12 w-auto" />
         </div>
 
         {/* Desktop Nav */}
         <div className="flex items-center gap-4">
           <nav className="hidden md:flex space-x-6 text-sm text-gray-700 font-medium">
-            <a href="#programs" className="hover:text-[#4f46e5] transition">
-              Programs
+            <a href="#hero" className="hover:text-[#4f46e5] transition">
+              home
             </a>
             <a href="#about" className="hover:text-[#4f46e5] transition">
               About Us
             </a>
-            <a href="#admission" className="hover:text-[#4f46e5] transition">
-              Admission
+            <a href="#Programs" className="hover:text-[#4f46e5] transition">
+              Programs
+            </a>
+            <a href="#Gallery" className="hover:text-[#4f46e5] transition">
+              Gallery
             </a>
             <a href="#contact" className="hover:text-[#4f46e5] transition">
               Contact
@@ -47,11 +46,11 @@ function Navbar() {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:block ml-4">
+          {/* <div className="hidden md:block ml-4">
             <button className="bg-[#4f46e5] text-white text-sm px-4 py-2 rounded hover:bg-blue-700 transition">
               INQUIRE NOW
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Mobile menu toggle */}
@@ -70,7 +69,11 @@ function Navbar() {
       {(isOpen || showDropdown) && (
         <div
           className={`md:hidden px-4 pb-4 origin-top transition-all duration-300 ease-in-out
-            ${isOpen ? "opacity-100 max-h-screen" : "opacity-0 max-h-0 overflow-hidden"}
+            ${
+              isOpen
+                ? "opacity-100 max-h-screen"
+                : "opacity-0 max-h-0 overflow-hidden"
+            }
           `}
           style={{ transitionProperty: "opacity, max-height" }}
         >

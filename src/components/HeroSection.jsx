@@ -5,7 +5,7 @@ import hero from '../assets/hero.jpg'
 
 const HeroSection = () => {
   return (
-    <section className="bg-white">
+    <section id='hero' className="bg-white">
       <div className="container containers mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
         {/* Text Content */}
         <motion.div
